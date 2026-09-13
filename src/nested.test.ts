@@ -25,7 +25,7 @@ const {
     SIMPLE_QUESTIONS,
     TRIVIA_QUESTIONS,
     EMPTY_QUESTIONS,
-    SIMPLE_QUESTIONS_2,
+    SIMPLE_QUESTIONS_2
 }: Record<string, Question[]> =
     // Typecast the test data that we imported to be a record matching
     //  strings to the question list

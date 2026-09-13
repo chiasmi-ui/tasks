@@ -118,7 +118,7 @@ describe("Testing the object functions", () => {
 
     ///////////////////////////////////
     // toMarkdown
-    test("(3 pts) Testing the toMarkdown function", () => {
+    test("Testing the toMarkdown function", () => {
         expect(toMarkdown(ADDITION_QUESTION)).toEqual(`# Addition
 What is 2+2?`);
         expect(toMarkdown(LETTER_QUESTION)).toEqual(`# Letters
@@ -145,9 +145,9 @@ What shape can you make with one line?
 
     ///////////////////////////////////
     // renameQuestion
-    test("(3 pts) Testing the renameQuestion function", () => {
+    test("Testing the renameQuestion function", () => {
         expect(
-            renameQuestion(ADDITION_QUESTION, "My Addition Question"),
+            renameQuestion(ADDITION_QUESTION, "My Addition Question")
         ).toEqual({
             id: 1,
             name: "My Addition Question",
@@ -203,13 +203,13 @@ What shape can you make with one line?
             options: [],
             expected: "4",
             points: 1,
-            published: true,
+            published: true
         });
     });
 
     ///////////////////////////////////
     // duplicateQuestion
-    test("(3 pts) Testing the duplicateQuestion function", () => {
+    test("Testing the duplicateQuestion function", () => {
         expect(duplicateQuestion(9, ADDITION_QUESTION)).toEqual({
             id: 9,
             name: "Copy of Addition",
@@ -218,7 +218,7 @@ What shape can you make with one line?
             options: [],
             expected: "4",
             points: 1,
-            published: false,
+            published: false
         });
         expect(duplicateQuestion(55, LETTER_QUESTION)).toEqual({
             id: 55,

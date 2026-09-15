@@ -10,7 +10,7 @@ export function ChangeType(): React.JSX.Element {
             type === "multiple_choice_question"
                 ? "short_answer_question"
                 : "multiple_choice_question"
-        )};
+        )}
     }
     
     return <div>

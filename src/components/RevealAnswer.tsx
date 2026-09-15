@@ -5,7 +5,7 @@ export function RevealAnswer(): React.JSX.Element {
     const [visible, setVisible] = useState<boolean>(false);
     return (
         <div>
-            <Button onClick={() => setVisible(!visible)}>
+            <Button onClick={() => {setVisible(!visible)}}>
                 {visible ? "Hide Answer" : "Reveal Answer"}
             </Button>
             {visible && <div>Answer: 42</div>}

@@ -6,11 +6,11 @@ export function ChangeType(): React.JSX.Element {
     const [type, setType] = useState<QuestionType>("short_answer_question");
     
     function changeType(): void {
-        setType(
+        {setType(
             type === "multiple_choice_question"
                 ? "short_answer_question"
                 : "multiple_choice_question"
-        );
+        )};
     }
     
     return <div>

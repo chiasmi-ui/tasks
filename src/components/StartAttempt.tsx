@@ -9,16 +9,16 @@ export function StartAttempt(): React.JSX.Element {
         <Button
                 disabled={inProgress || attempts === 0}
                 onClick={() => {
-                    setInProgress(true);
-                    setAttempts(attempts - 1);
+                    {setInProgress(true)};
+                    {setAttempts(attempts - 1)};
                 }}
             >
                 Start Quiz
             </Button>
-            <Button disabled={!inProgress} onClick={() => setInProgress(false)}>
+            <Button disabled={!inProgress} onClick={() => {setInProgress(false)}}>
                 Stop Quiz
             </Button>
-            <Button disabled={inProgress} onClick={() => setAttempts(attempts + 1)}>
+            <Button disabled={inProgress} onClick={() => {setAttempts(attempts + 1)}}>
                 Mulligan
             </Button>
             <div>Attempts: {attempts}</div>
